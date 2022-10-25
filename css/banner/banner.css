@@ -1,0 +1,26 @@
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("../../assets/banner-image.png");
+    height: 352px;
+    color: white;
+}
+
+.banner__content{
+    padding: 3rem;
+    flex: 0;
+}
+
+.banner__text{
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+}
+
+.banner__title{
+    font-size: 4rem;
+}
+
+.banner__subtitle{
+    font-size: 2rem;
+}
