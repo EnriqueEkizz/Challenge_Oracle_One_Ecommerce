@@ -1,0 +1,13 @@
+.buttons__primary{
+    padding: .75rem;
+    margin-right: 1rem;
+    color: white;
+    font-weight: bold;
+    border: solid 2px #2E86C1;
+    background-color: #2E86C1;
+}
+
+.buttons__primary-blank{
+    color: #2E86C1;
+    background-color: white;
+}
