@@ -1,0 +1,59 @@
+.header{
+    position: relative;
+    background-color: white;
+    padding: 0.75rem;
+}
+
+.header__content{
+    position: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+.header__content_floating{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: white;
+    opacity: 0;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.3s ease;
+}
+
+.show__header__content{
+    z-index: 2;
+    opacity: 1;
+}
+
+.header__content__control{
+    position: relative;
+}
+
+.header__content_floating label{
+    flex: 1;
+    padding: 1rem 0rem 1rem 1rem;
+    display: flex;
+}
+.header__content__control input{
+    flex: 1;
+    padding: .75rem .9rem;
+    border-radius: 0.75rem;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #F2F3F4;
+}
+.header__content_floating button{
+    margin: .75rem 0 .75rem .75rem;
+}
+.header__content_floating button:last-child{
+    margin-right: .75rem;
+}

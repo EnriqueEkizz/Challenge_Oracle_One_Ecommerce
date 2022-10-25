@@ -1,13 +1,34 @@
-.buttons__primary{
-    padding: .75rem;
-    margin-right: 1rem;
+.button{
+    cursor: pointer;
     color: white;
     font-weight: bold;
-    border: solid 2px #2E86C1;
     background-color: #2E86C1;
+    transition: all 0.3s ease;
+    border: none;
 }
 
-.buttons__primary-blank{
-    color: #2E86C1;
-    background-color: white;
+.button:hover{
+    color: white;
+    background-color: #2E86C1 !important;
 }
+
+.button_blank{
+    color: #2E86C1;
+    background-color: white !important;
+}
+
+/* Boton cuadrado */
+.button_square{
+    border: solid 2px #2E86C1;
+}
+
+.button_square_l{
+    padding: .75rem 1.5rem;
+}
+
+/* Boton circulo */
+.button_circle{
+    padding: .75rem;
+    border-radius: 50%;
+}
+
