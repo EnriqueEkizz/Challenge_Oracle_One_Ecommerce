@@ -1,0 +1,21 @@
+.form__input{
+    flex: 1;
+    font-size: 1rem;
+    padding: 2rem 0.75rem 0.25rem 0.75rem;
+    border: none;
+    border-bottom: 1px gray solid;
+    outline: none;
+}
+
+.form__input:focus {
+    border-bottom: 3px solid #2E86C1;
+}
+
+.form__input:focus ~ span,
+.form__input:not(:placeholder-shown) ~ span{
+    color: #2E86C1;
+    position: absolute;
+    font-size: 0.75rem;
+    font-weight: bold;
+    top: 0.75rem;
+}
