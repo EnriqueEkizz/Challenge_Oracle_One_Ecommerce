@@ -17,6 +17,10 @@
     background-color: white !important;
 }
 
+.button_transparent{
+    background-color: transparent;
+}
+
 /* Boton cuadrado */
 .button_square{
     border: solid 2px #2E86C1;
@@ -24,6 +28,10 @@
 
 .button_square_l{
     padding: .75rem 1.5rem;
+}
+
+.button_square_sm{
+    padding: 0.75rem;
 }
 
 /* Boton circulo */

@@ -8,5 +8,13 @@ main {
 section {
     padding: 1.25rem;
     box-sizing: border-box;
-    border: solid 2px rgba(0, 0, 0, 0.12);
+    /*border: solid 2px rgba(0, 0, 0, 0.12);*/
+}
+
+section:nth-child(n){
+    background-color: white;
+}
+
+section:nth-child(2n){
+    background-color: #EAF2FD;
 }
