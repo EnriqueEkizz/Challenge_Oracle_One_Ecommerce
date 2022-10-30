@@ -1,0 +1,27 @@
+.product-form__content{
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.product-form__content .button_square_l{
+    width: 100%;
+}
+
+@media(min-width: 550px) {
+    .product-form__content{
+        width: 70%;
+    }
+}
+
+@media(min-width: 768px) {
+    .product-form__content{
+        width: 60%;
+    }
+}
+
+@media(min-width: 900px) {
+    .product-form__content{
+        width: 50%;
+    }
+}

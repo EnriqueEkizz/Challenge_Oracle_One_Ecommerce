@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo producto</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/buttons/buttons.css">
+    <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="css/product-form/product-form.css">
+    <link rel="stylesheet" href="css/rodapie/rodapie.css">
+    <link rel="stylesheet" href="css/form/form.css">
+    <link rel="stylesheet" href="css/form/form__input.css">
+    <link rel="stylesheet" href="css/dev-info/dev-info.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main role="main">
+
+        <!-- ____HEADER:
+            - Barra de busqueda con logo
+            - Barra de busqueda flotante
+        -->
+        <section class="header">
+            <div class="header__content">
+                <img src="assets/Logo.png" alt="">
+                <button id="btnShowSearchPane" class="button button_blank button_circle material-symbols-outlined">search</button>
+            </div>
+            <div id="header__content_floating" class="header__content header__content_floating">
+                <label for="txtBuscar" class="header__content__control">
+                    <input
+                                    type="text"
+                                    id="txtBuscar">
+                </label>
+                <button id="btnBuscar" class="button button_blank button_circle material-symbols-outlined">search</button>
+                <button id="btnCloseSearchPane" class="button button_blank button_circle material-symbols-outlined">close</button>
+            </div>
+        </section>
+
+        <!-- ____FORMULARIO-->
+        <section class="product-form">
+            <div class="product-form__content">
+                <form onsubmit="reset()" class="form">
+                    <p class="form__title">Agregar nuevo producto</p>
+                    <label class="form__label">
+                        <input
+                                        id="txtUrlImagenProducto"
+                                        type="text"
+                                        class="form__input"
+                                        placeholder=" "
+                                        maxlength="50"
+                                        required>
+                        <span>URL de imagen</span>
+                    </label>
+                    <label class="form__label">
+                        <input
+                                        id="txtCategoria"
+                                        type="text"
+                                        class="form__input"
+                                        placeholder=" "
+                                        maxlength="50"
+                                        required>
+                        <span>Categoría</span>
+                    </label>
+                    <label class="form__label">
+                        <input
+                                        id="txtNombreProducto"
+                                        type="text"
+                                        class="form__input"
+                                        placeholder=" "
+                                        maxlength="50"
+                                        required>
+                        <span>Nombre del producto</span>
+                    </label>
+                    <label class="form__label">
+                        <input
+                                        id="txtPrecioProducto"
+                                        type="text"
+                                        class="form__input"
+                                        placeholder=" "
+                                        maxlength="50"
+                                        required>
+                        <span>Precio del producto</span>
+                    </label>
+                    <label class="form__label">
+                        <textarea
+                                        id="txtDescripcionProducto"
+                                        class="form__input"
+                                        rows="4"
+                                        cols="4"
+                                        maxlength="300"
+                                        required></textarea>
+                        <span>Descripción del producto</span>
+                    </label>
+                    <button type="submit" class="button button_square button_square_l">Agregar producto</button>
+                </form>
+            </div>
+        </section>
+        
+        <!-- ____RODAPIE-->
+        <section class="rodapie">
+            <div class="rodapie__informations">
+                <div class="rodapie__logo">
+                    <img src="assets/Logo.png" alt="">
+                </div>
+                <ul class="rodapie__links">
+                    <li class="rodapie__link"><a href="#">Quienes somos</a></li>
+                    <li class="rodapie__link"><a href="#">Política de privacidad</a></li>
+                    <li class="rodapie__link"><a href="#">Programa de fidelidad</a></li>
+                    <li class="rodapie__link"><a href="#">Nuestras tiendas</a></li>
+                    <li class="rodapie__link"><a href="#">Quiero ser franquiciado</a></li>
+                    <li class="rodapie__link"><a href="#">Anúncie aquí</a></li>
+                </ul>
+            </div>
+            <form onsubmit="reset()" class="form">
+                <p class="form__title">Habla con nosotros</p>
+                <label class="form__label">
+                    <input
+                                    id="txtAsunto"
+                                    type="text"
+                                    class="form__input"
+                                    placeholder=" "
+                                    maxlength="50"
+                                    required>
+                    <span>Asunto</span>
+                </label>
+                <label class="form__label">
+                    <textarea
+                                    id="txtMensaje"
+                                    class="form__input"
+                                    rows="4"
+                                    cols="4"
+                                    maxlength="300"
+                                    required></textarea>
+                    <span>Mensaje</span>
+                </label>
+                <button type="submit" class="button button_square button_square_l">Enviar mensaje</button>
+            </form>
+        </section>
+
+        <!-- ____DEV_INFO-->
+        <section class="dev-info">
+            <p>Desarrollado por Carlos Enrique</p>
+            <p>2022</p>
+        </section>
+    </main>
+
+    <script src="js/header.js"></script>
+</body>
+</html>
